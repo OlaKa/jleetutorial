@@ -6,7 +6,7 @@ pipeline {
     stages{
         stage('Build'){
             steps {
-                echo "fake"
+                bat 'mvn clean install'
             }
             post {
                 success {
